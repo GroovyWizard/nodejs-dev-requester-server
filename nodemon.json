@@ -1,0 +1,9 @@
+{
+    "env" : {
+        "MYSQL_USER" : "usr_go_redirect",
+        "MYSQL_PASSWORD" : "usrgoredir_password",
+        "MYSQL_DATABASE" : "eadStockGo",
+        "MYSQL_HOST" : "ead_stock_go_db",
+        "MYSQL_PORT" : 3306
+    }
+}

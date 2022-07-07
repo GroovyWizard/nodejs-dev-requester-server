@@ -1,0 +1,18 @@
+version: '3'
+services:
+  requester_dev_server:
+    container_name: requester_dev_server
+    image: requester_dev_server
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    environment:
+      - VIRTUAL_HOST=requester.dev.server.com.br
+    volumes:
+      - ./:/home/node/app
+      - /home/node/app/node_modules
+    command: ["npm", "run", "start:dev"]
+networks:
+  default:
+    external:
+      name: eadstock-network
